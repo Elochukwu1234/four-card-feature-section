@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    margin: 50px auto;
+    padding: 0 10px;
+}
+h2{
+    font-size: 22.5px;
+    font-weight: 400;
+    text-align: center;
+}
+h2 span, h4{
+    font-weight: 600;
+}
+main > p{
+    font-size: 17.5px;
+    text-align: center;
+    font-weight: 200;
+    margin: 15px 0 60px;
+}
+.flex1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .25);
+    padding: 17.5px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.supervisor{
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.team-builder{
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+.karma{
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+.calculator{
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.card p{
+    font-size: 17.5px;
+    font-weight: 200;
+}
+.card img{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+
+/* Mobile view */
+@media only screen and (min-width : 375px){
+    h2{
+        font-size: 25px;
+    }
+    main > p{
+        font-size: 20px;
+    }
+    .card{
+        height: 220px;
+        min-width: 330px;
+    }
+    h4{
+        font-size: 22.5px;
+    }
+    .card p{
+        font-size: 20px;
+    }
+}
+
+/* Tablet view */
+@media only screen and (min-width : 768px){
+    h2{
+        font-size: 35px;
+    }
+    main > p{
+        font-size: 25px;
+        margin: 22.5px 0 90px;
+    }
+    .card{
+        height: 300px;
+        min-width: 450px;
+        margin-bottom: 45px;
+    }
+    h4{
+        font-size: 32.5px;
+    }
+    .card p{
+        font-size: 25px;
+    }
+    .card img{
+        height: 75px;
+        width: 75px;
+        bottom: 35px;
+        right: 35px;
+    }
+}
+
+/* Desktop view */
+@media only screen and (min-width : 1280px){
+    h2{
+        font-size: 35px;
+    }
+    main > p{
+        font-size: 25px;
+        margin: 15px 0 60px;
+        padding: 0 200px;
+    }
+    .flex1{
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 45px;
+    }
+    .card{
+        height: 220px;
+        min-width: 330px;
+    }
+    h4{
+        font-size: 22.5px;
+    }
+    .card p{
+        font-size: 20px;
+    }
+    .card img{
+        height: 50px;
+        width: 50px;
+        bottom: 25px;
+        right: 25px;
+    }
+}
